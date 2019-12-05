@@ -41,7 +41,7 @@
               (code (define-term dumb-id
                       (λ (l : [(List [Nat 2]) 0])
                         (case l
-                          [nil = (nil [(List [Nat 2]) 0])]
+                          [nil = (nil [(List [Nat 2]) 2])]
                           [(cons x xs) = (tick 2 in (let ([ys (id xs)])
                                                       (cons x ys)))])))) 0.8))
        (list (scale (code ((list
@@ -81,12 +81,12 @@
                                  "L:Var"
                                  '())))))))) 0.4))
 
-       (list (scale (bitmap "derive.png") 0.59))))
+       (list (scale (bitmap "derive.png") 0.5))))
 
 (slide
  #:title "Our Static Semantics for Linear AARA (Lists)"
  'alts
- (list (list (scale (bitmap "statics.png") 0.7))
+ (list (list (scale (bitmap "statics.png") 0.6))
        (list (scale (code
                      [(where [τ p] (lists-fn T))
                       (where r, (- (term q) (term p)))
