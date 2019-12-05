@@ -19,14 +19,16 @@
  #:title "A Wip, Executable Semantic Model for Linear AARA"
  'next!
  (scale (colorize (para #:align 'center (bold "And a Showcase of Redex")) "red") 0.9)
- (bitmap "prac.jpg")
- (scale (supert "HI") 0.6))
+ 'next!
+ 'alts
+ (list (list (bitmap "prac.jpg"))
+       (list (scale (bitmap "runyour.png") 0.5))))
 
 (slide
  #:title "Redex: Design Programming Languages as Executable Semantics"
  'alts
  (list (list
-        (colorize (t "Our language expressions, operations, type envs, and more") "red")
+        (colorize (scale (t "Our language expressions, operations, type envs, and more") 0.8) "red")
         (scale (pict->pre-render-pict (render-language LinearAARAL)) 1.1))
 
        (list (scale (bitmap "relation.png") 0.5)))
