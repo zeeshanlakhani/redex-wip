@@ -180,6 +180,8 @@ Caveats that I only learned after the fact:
 
 
 ;; Main Static Semantics and Type-Inferencing
+;;
+;; TODO: Better handling of removing ticks within Lists with potentials for fns
 (define-judgment-form LinearAARAL
   #:contract (type-infer Γ pot ⊢ e : τ)
   #:mode (type-infer I I I I I O)
